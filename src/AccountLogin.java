@@ -5,7 +5,8 @@ public class AccountLogin {
         if (localAccountNo.equals(accountInfo.accountNo)  && localPassword.equals(accountInfo.password)){
             return true;
         }else {
+            System.out.println("Login Failed  : Please check Account Number & Password once again");
             return false;
-        }
     }
+        }
 }

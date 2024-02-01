@@ -14,8 +14,11 @@ public class OnlineShopTest {
            System.out.println(" Account Login Successfully");
            String status = paymentProcess.paymentProcess();
            System.out.println(status);
-       }if (deliveryProcess.senderOtp == accountInfo.reciverOtp){
-           System.out.println("Odere Deliverd Successfully");
+           if (deliveryProcess.senderOtp == accountInfo.reciverOtp){
+               System.out.println("Odere Deliverd Successfully");
+       }else {
+               System.out.println("Oder Undelivered due to OTP fail  call CustomerCare for more updates");
+       }
        }
    }
 }
